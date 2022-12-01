@@ -43,7 +43,10 @@ export default function Home() {
               width: "100px",
               color: "white",
             }}
-            href="/task-1"
+            callback={() => {
+              console.log("button from Builder1 pressed!");
+              window.location.href = "/task-2";
+            }}
           />
         </div>
         <h3>Zubin Choudhary</h3>
